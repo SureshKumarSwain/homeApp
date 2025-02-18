@@ -86,17 +86,7 @@ public class BookingController {
 		return ResponseEntity.ok(bookingResponses);
 	}
 
-	/*
-	 * @DeleteMapping("/booking/{bookingId}/delete") public void
-	 * cancelBooking(@PathVariable Long bookingId) {
-	 * bookingService.cancelBooking(bookingId); }
-	 */
-	/*
-	 * @DeleteMapping("/booking/{bookingId}/delete") public ResponseEntity<String>
-	 * cancelBooking(@PathVariable Long bookingId) {
-	 * bookingService.cancelBooking(bookingId); return
-	 * ResponseEntity.ok("Booking cancelled successfully."); }
-	 */
+
 
 	@DeleteMapping("/booking/{bookingId}/delete")
 	public ResponseEntity<String> cancelBooking(@PathVariable Long bookingId) {
